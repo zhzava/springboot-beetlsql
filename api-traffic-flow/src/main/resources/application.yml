@@ -1,0 +1,40 @@
+server:
+  port: 8090
+
+
+spring:
+  datasource:
+    #type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.0.201:1521:orcl
+    #url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    username: odin_itms_new
+    password: odin_itms_new
+    #username: zhz
+    #password: zhz
+    filter: stat,wall
+    initialSize: 5
+    minIdle: 1
+    maxActive: 30
+  #mvc: #出现错误时, 直接抛出异常
+    #throw-exception-if-no-handler-found: true
+  #resources:
+    #add-mappings: false
+swagger:
+  base-package: com.bosi.itms.controller
+  base-path: /**
+  exclude-path: /error
+
+beetlsql:
+#    sqlPath: /sql
+#    dev: true
+  daoSuffix: Dao
+  basePackage: com.bosi.itms.dao
+  dbStyle: org.beetl.sql.core.db.OracleStyle
+
+#代码生成
+gen-code:
+  srcPath: E:\Idea WorkSpqce\traffic-api\src\main\java
+  entityPkg: com.bosi.itms.pojo
+  daoPkg: com.bosi.itms.dao
+  sqlPath:    #sql文件位置 默认即可
