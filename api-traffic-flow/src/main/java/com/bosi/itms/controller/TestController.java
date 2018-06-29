@@ -2,8 +2,8 @@ package com.bosi.itms.controller;
 
 import com.bosi.itms.entity.Test;
 import com.bosi.itms.service.TestService;
-import com.bosi.itms.utils.R;
-import com.bosi.itms.pojo.PageParam;
+import com.bosi.itms.vo.PageParam;
+import com.bosi.itms.utils.pojo.R;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.beetl.sql.core.SQLManager;

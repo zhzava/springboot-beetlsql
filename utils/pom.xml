@@ -11,5 +11,10 @@
 
     <artifactId>utils</artifactId>
 
-
+    <!--<dependencies>
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>-->
 </project>

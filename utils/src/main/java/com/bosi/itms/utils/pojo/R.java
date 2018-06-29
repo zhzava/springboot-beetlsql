@@ -1,4 +1,4 @@
-package com.bosi.itms.utils;
+package com.bosi.itms.utils.pojo;
 
 import java.util.HashMap;
 import java.util.Map;

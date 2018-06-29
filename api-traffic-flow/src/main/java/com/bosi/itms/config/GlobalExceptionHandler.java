@@ -1,6 +1,6 @@
 package com.bosi.itms.config;
 
-import com.bosi.itms.utils.R;
+import com.bosi.itms.utils.pojo.R;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.web.servlet.error.AbstractErrorController;
 import org.springframework.boot.web.servlet.error.ErrorAttributes;

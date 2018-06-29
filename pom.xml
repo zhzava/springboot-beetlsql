@@ -12,7 +12,7 @@
         <module>api-traffic-flow</module>
         <module>utils</module>
         <module>beet-general</module>
-        <module>pojo</module>
+        <!--<module>shiro</module>-->
     </modules>
 
     <parent>
@@ -29,6 +29,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <druid.version>1.0.18</druid.version>
         <beetlsql.version>2.10.27</beetlsql.version>
+        <!--<shiro.version>1.4.0</shiro.version>
+        <shiro-redis.version>2.4.2.1-RELEASE</shiro-redis.version>-->
     </properties>
 
     <dependencyManagement>
@@ -52,6 +54,12 @@
                 <version>${druid.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.47</version>
+            </dependency>
+
+            <dependency>
                 <groupId>com.oracle</groupId>
                 <artifactId>ojdbc6</artifactId>
                 <version>11.2.0.1.0</version>
@@ -62,6 +70,17 @@
                 <version>1.7.0.RELEASE</version>
             </dependency>
 
+            <!--shiro-->
+            <!--<dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.crazycake</groupId>
+                <artifactId>shiro-redis</artifactId>
+                <version>${shiro-redis.version}</version>
+            </dependency>-->
         </dependencies>
     </dependencyManagement>
 
